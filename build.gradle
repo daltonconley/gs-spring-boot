@@ -40,7 +40,7 @@ packaging {
     packageName = 'gs-spring-boot' // Optional, default is project.name
     dependencies = ['openjdk-8-jre'] //Optional, an array of package dependencies
     baseDir = project.buildDir // Optional, base directory to package, default: project.buildDir
-    prefix = /opt/spring-boot // Optional, a path to prefix files when building package, default: root (/)
+    prefix = '/opt/spring-boot' // Optional, a path to prefix files when building package, default: root (/)
     extraOptions = ['--vendor': 'Thomson Reuters', '--maintainer': 'dalton.conley@thomsonreuters.com'] // Optional, a map containing extra options
     extraFlags   = ['--rpm-auto-add-directories'] // Optional, a list of additional flags to fpm
 }
