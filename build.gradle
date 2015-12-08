@@ -19,7 +19,7 @@ jar {
     version =  '0.1.0'
 }
 
-version = "1." + System.getEnv("BUILD_NUMBER") + "-SNAPSHOT"
+version = "1." + System.getenv("BUILD_NUMBER") + "-SNAPSHOT"
 
 repositories {
     mavenCentral()
