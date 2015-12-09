@@ -19,8 +19,6 @@ jar {
     version =  '0.1.0'
 }
 
-project.name = 'gs-spring-boot'
-
 version = "1." + System.getenv("BUILD_NUMBER") + "_SNAPSHOT"
 
 repositories {
