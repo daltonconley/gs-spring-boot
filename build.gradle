@@ -38,7 +38,7 @@ dependencies {
     // end::tests[]
 }
 
-packaging {
+rpm {
     packageName = 'gs-spring-boot' // Optional, default is project.name
     dependencies = ['openjdk-8-jre'] //Optional, an array of package dependencies
     baseDir = project.buildDir // Optional, base directory to package, default: project.buildDir
