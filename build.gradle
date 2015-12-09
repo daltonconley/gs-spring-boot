@@ -40,7 +40,7 @@ dependencies {
     // end::tests[]
 }
 
-package {
+packaging {
   packageName = 'gs-spring-boot'
 }
 
