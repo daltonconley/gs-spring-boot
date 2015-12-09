@@ -19,7 +19,9 @@ jar {
     version =  '0.1.0'
 }
 
-version = "1." + System.getenv("BUILD_NUMBER") + "-SNAPSHOT"
+project.name = 'gs-spring-boot'
+
+version = "1." + System.getenv("BUILD_NUMBER") + "_SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -36,6 +38,10 @@ dependencies {
     // tag::tests[]
     testCompile("org.springframework.boot:spring-boot-starter-test")
     // end::tests[]
+}
+
+package {
+  packageName = 'gs-spring-boot'
 }
 
 rpm {
